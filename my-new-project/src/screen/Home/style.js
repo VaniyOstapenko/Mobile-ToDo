@@ -19,6 +19,14 @@ const styles = StyleSheet.create({
         width: 150,
         height: 150,
         resizeMode: 'contain'
+    },
+    button: {
+        width: '100%',
+        borderRadius: 6,
+        backgroundColor: '#50C2C9',
+        color: 'white',
+        padding: 10,
+        textAlign: 'center'
     }
 });
 
