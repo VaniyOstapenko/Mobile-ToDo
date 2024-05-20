@@ -11,14 +11,14 @@ const styles = StyleSheet.create({
         width: '80%',
         flex: 1,
         flexDirection: 'column',
-        gap: 20,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     img: {
-        width: 150,
-        height: 150,
-        resizeMode: 'contain'
+        width: 230,
+        height: 170,
+        resizeMode: 'contain',
+        marginTop: 70
     },
     button: {
         width: '100%',
@@ -26,7 +26,25 @@ const styles = StyleSheet.create({
         backgroundColor: '#50C2C9',
         color: 'white',
         padding: 10,
-        textAlign: 'center'
+        textAlign: 'center',
+        marginTop: 100,
+        fontSize: 18,
+        fontFamily: 'Poppins600',
+        fontWeight: 600
+    },
+    gets: {
+        fontFamily: 'Poppins700',
+        fontSize: 18,
+        fontWeight: 700,
+        marginTop: 65
+    },
+    lorem: {
+        fontFamily: 'Poppins400',
+        fontSize: 13,
+        fontWeight: 400,
+        textAlign: 'center',
+        width: 190,
+        marginTop: 20
     }
 });
 
