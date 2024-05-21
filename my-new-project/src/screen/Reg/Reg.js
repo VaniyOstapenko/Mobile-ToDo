@@ -26,7 +26,7 @@ export default function Reg({ navigation }) {
                 <TextInput style={styles.input} placeholder='Enter Password' />
                 <TextInput style={styles.input} placeholder='Confirm password' />
                 <Text style={styles.button} onPress={() => navigation.navigate('Auth')}>Register</Text>
-                <Text style={styles.already}>Already have an account ? <Text style={styles.sign}>Sign In</Text></Text>
+                <Text style={styles.already}>Already have an account ? <Text style={styles.sign} onPress={() => navigation.navigate('Auth')}>Sign In</Text></Text>
             </View>
         </View>
     );

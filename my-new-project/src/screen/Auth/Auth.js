@@ -10,8 +10,8 @@ export default function Reg({ navigation }) {
                 <TextInput style={styles.input} placeholder='Enter your Email' />
                 <TextInput style={styles.input} placeholder='Enter Password' />
                 <Text style={styles.forget}>Forget password ?</Text>
-                <Text style={styles.button} >Login</Text>
-                <Text style={styles.account} onPress={() => navigation.navigate('Reg')}>Don’t have an account ? <Text style={styles.sign_up}>Sign Up</Text></Text>
+                <Text style={styles.button} onPress={() => navigation.navigate('Main')}>Login</Text>
+                <Text style={styles.account}>Don’t have an account ? <Text onPress={() => navigation.navigate('Reg')} style={styles.sign_up}>Sign Up</Text></Text>
             </View>
         </View>
     );

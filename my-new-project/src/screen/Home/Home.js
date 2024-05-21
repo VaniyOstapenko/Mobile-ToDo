@@ -1,4 +1,4 @@
-import { Text, View, Button, Image } from 'react-native';
+import { Text, View, Image } from 'react-native';
 import styles from './style'
 import Img from '../../assets/landing.png'
 import * as Font from 'expo-font'
