@@ -90,11 +90,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         gap: 5
     },
-    square1: {
-        border: '2px solid #000000',
-        width: 17,
-        height: 17
-    },
     text1: {
         fontFamily: 'Poppins600',
         fontSize: 12,
