@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import ImgMain from '../../assets/MainPicture.svg';
 import ImgClock from '../../assets/Clock.svg'
 import ImgVector from '../../assets/Vector.svg'
+import Modal from '../Modal/Modal';
 
 const loadFont = async () => {
     await Font.loadAsync({
@@ -15,6 +16,8 @@ const loadFont = async () => {
 }
 
 export default function Main() {
+    const [modalActive, setModalActive] = useState(true)
+
     const [color1, setColor1] = useState(true)
     const [color2, setColor2] = useState(true)
     const [color3, setColor3] = useState(true)
@@ -40,7 +43,8 @@ export default function Main() {
                 <View style={styles.bottomBlock}>
                     <View style={styles.blockDaily}>
                         <Text style={styles.daily}>Daily Task</Text>
-                        <Image style={styles.imgVector} source={ImgVector} />
+                        <Image style={styles.imgVector} source={ImgVector} onClick={() => setModalActive(!modalActive)} />
+                        <Modal active={modalActive} setActive={setModalActive} />
                     </View>
                     <View style={styles.blockParagraphs}>
                         <View style={styles.learn1}>
