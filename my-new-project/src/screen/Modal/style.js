@@ -15,9 +15,9 @@ const styles = StyleSheet.create({
     modal_active: {
         height: '20%',
         width: '80%',
-        backgroundColor: 'rgba(0,0,0,0.5)',
+        backgroundColor: 'gray',
         position: 'fixed',
-        top: 550,
+        top: 560,
         left: 35,
         alignItems: 'center',
         justifyContent: 'center',
@@ -28,7 +28,8 @@ const styles = StyleSheet.create({
         borderRadius: 12,
         backgroundColor: 'white',
         height: '80%',
-        width: '80%'
+        width: '90%',
+        opacity: 1
     }
 })
 

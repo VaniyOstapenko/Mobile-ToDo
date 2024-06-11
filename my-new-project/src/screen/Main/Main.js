@@ -46,7 +46,7 @@ export default function Main() {
                         <Image style={styles.imgVector} source={ImgVector} onClick={() => setModalActive(!modalActive)} />
                         <Modal active={modalActive} setActive={setModalActive} />
                     </View>
-                    <View style={styles.blockParagraphs}>
+                    <View style={modalActive ? styles.blockParagraphs : styles.blockParagraphs2}>
                         <View style={styles.learn1}>
                             <View style={{ border: '2px solid #000000', width: 17, height: 17, backgroundColor: color1 ? 'white' : '#50C2C9' }} onClick={() => setColor1(!color1)}></View>
                             <Text style={styles.text1}>Learning Programming by 12PM</Text>

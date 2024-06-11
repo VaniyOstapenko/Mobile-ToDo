@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     },
     downContainer: {
         width: '100%',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     welcome: {
         fontFamily: 'Poppins700',
@@ -85,6 +85,14 @@ const styles = StyleSheet.create({
         gap: 8,
         marginTop: 15,
         marginRight: 66
+    },
+    blockParagraphs2: {
+        flex: 1,
+        flexDirection: 'column',
+        gap: 8,
+        marginTop: 15,
+        marginRight: 66,
+        opacity: 0
     },
     learn1: {
         flexDirection: 'row',
